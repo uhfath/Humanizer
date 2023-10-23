@@ -1,19 +1,112 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">  
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.0;netstandard2.0;net6.0</TargetFrameworks>    
+    <TargetFrameworks>net7.0</TargetFrameworks>    
     <Authors>Mehdi Khalili, Claire Novotny</Authors>
-    <PackageLicenseUrl>https://raw.githubusercontent.com/Humanizr/Humanizer/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/Humanizr/Humanizer</PackageProjectUrl>
     <MinClientVersion>2.12</MinClientVersion>
     <Description>A micro-framework that turns your normal strings, type names, enum fields, date fields ETC into a human friendly format</Description>    
     <Copyright>Copyright © .NET Foundation and Contributors</Copyright>    
     <Product>Humanizer ($(TargetFramework))</Product>    
-    <GenerateDocumentationFile Condition=" '$(Configuration)' == 'Release' ">true</GenerateDocumentationFile>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>Humanizer.snk</AssemblyOriginatorKeyFile>
-    <DebugType Condition=" '$(BuildingForLiveUnitTesting)' != 'true' ">embedded</DebugType>
-    <LangVersion>preview</LangVersion>
   </PropertyGroup>  
+  <ItemGroup>
+    <EmbeddedResource Remove="Properties\Resources.af.resx" />
+    <EmbeddedResource Remove="Properties\Resources.ar.resx" />
+    <EmbeddedResource Remove="Properties\Resources.az.resx" />
+    <EmbeddedResource Remove="Properties\Resources.bg.resx" />
+    <EmbeddedResource Remove="Properties\Resources.bn-BD.resx" />
+    <EmbeddedResource Remove="Properties\Resources.cs.resx" />
+    <EmbeddedResource Remove="Properties\Resources.da.resx" />
+    <EmbeddedResource Remove="Properties\Resources.de.resx" />
+    <EmbeddedResource Remove="Properties\Resources.el.resx" />
+    <EmbeddedResource Remove="Properties\Resources.es.resx" />
+    <EmbeddedResource Remove="Properties\Resources.fa.resx" />
+    <EmbeddedResource Remove="Properties\Resources.fi-FI.resx" />
+    <EmbeddedResource Remove="Properties\Resources.fil-PH.resx" />
+    <EmbeddedResource Remove="Properties\Resources.fr-BE.resx" />
+    <EmbeddedResource Remove="Properties\Resources.fr.resx" />
+    <EmbeddedResource Remove="Properties\Resources.he.resx" />
+    <EmbeddedResource Remove="Properties\Resources.hr.resx" />
+    <EmbeddedResource Remove="Properties\Resources.hu.resx" />
+    <EmbeddedResource Remove="Properties\Resources.hy.resx" />
+    <EmbeddedResource Remove="Properties\Resources.id.resx" />
+    <EmbeddedResource Remove="Properties\Resources.is.resx" />
+    <EmbeddedResource Remove="Properties\Resources.it.resx" />
+    <EmbeddedResource Remove="Properties\Resources.ja.resx" />
+    <EmbeddedResource Remove="Properties\Resources.ko-KR.resx" />
+    <EmbeddedResource Remove="Properties\Resources.ku.resx" />
+    <EmbeddedResource Remove="Properties\Resources.lv.resx" />
+    <EmbeddedResource Remove="Properties\Resources.ms-MY.resx" />
+    <EmbeddedResource Remove="Properties\Resources.mt.resx" />
+    <EmbeddedResource Remove="Properties\Resources.nb-NO.resx" />
+    <EmbeddedResource Remove="Properties\Resources.nb.resx" />
+    <EmbeddedResource Remove="Properties\Resources.nl.resx" />
+    <EmbeddedResource Remove="Properties\Resources.pl.resx" />
+    <EmbeddedResource Remove="Properties\Resources.pt.resx" />
+    <EmbeddedResource Remove="Properties\Resources.ro.resx" />
+    <EmbeddedResource Remove="Properties\Resources.sk.resx" />
+    <EmbeddedResource Remove="Properties\Resources.sl.resx" />
+    <EmbeddedResource Remove="Properties\Resources.sr-Latn.resx" />
+    <EmbeddedResource Remove="Properties\Resources.sr.resx" />
+    <EmbeddedResource Remove="Properties\Resources.sv.resx" />
+    <EmbeddedResource Remove="Properties\Resources.th-TH.resx" />
+    <EmbeddedResource Remove="Properties\Resources.tr.resx" />
+    <EmbeddedResource Remove="Properties\Resources.uk.resx" />
+    <EmbeddedResource Remove="Properties\Resources.uz-Cyrl-UZ.resx" />
+    <EmbeddedResource Remove="Properties\Resources.uz-Latn-UZ.resx" />
+    <EmbeddedResource Remove="Properties\Resources.vi.resx" />
+    <EmbeddedResource Remove="Properties\Resources.zh-CN.resx" />
+    <EmbeddedResource Remove="Properties\Resources.zh-Hans.resx" />
+    <EmbeddedResource Remove="Properties\Resources.zh-Hant.resx" />
+  </ItemGroup>  
+  <ItemGroup>
+    <None Include="Properties\Resources.af.resx" />
+    <None Include="Properties\Resources.ar.resx" />
+    <None Include="Properties\Resources.az.resx" />
+    <None Include="Properties\Resources.bg.resx" />
+    <None Include="Properties\Resources.bn-BD.resx" />
+    <None Include="Properties\Resources.cs.resx" />
+    <None Include="Properties\Resources.da.resx" />
+    <None Include="Properties\Resources.de.resx" />
+    <None Include="Properties\Resources.el.resx" />
+    <None Include="Properties\Resources.es.resx" />
+    <None Include="Properties\Resources.fa.resx" />
+    <None Include="Properties\Resources.fi-FI.resx" />
+    <None Include="Properties\Resources.fil-PH.resx" />
+    <None Include="Properties\Resources.fr-BE.resx" />
+    <None Include="Properties\Resources.fr.resx" />
+    <None Include="Properties\Resources.he.resx" />
+    <None Include="Properties\Resources.hr.resx" />
+    <None Include="Properties\Resources.hu.resx" />
+    <None Include="Properties\Resources.hy.resx" />
+    <None Include="Properties\Resources.id.resx" />
+    <None Include="Properties\Resources.is.resx" />
+    <None Include="Properties\Resources.it.resx" />
+    <None Include="Properties\Resources.ja.resx" />
+    <None Include="Properties\Resources.ko-KR.resx" />
+    <None Include="Properties\Resources.ku.resx" />
+    <None Include="Properties\Resources.lv.resx" />
+    <None Include="Properties\Resources.ms-MY.resx" />
+    <None Include="Properties\Resources.mt.resx" />
+    <None Include="Properties\Resources.nb-NO.resx" />
+    <None Include="Properties\Resources.nb.resx" />
+    <None Include="Properties\Resources.nl.resx" />
+    <None Include="Properties\Resources.pl.resx" />
+    <None Include="Properties\Resources.pt.resx" />
+    <None Include="Properties\Resources.ro.resx" />
+    <None Include="Properties\Resources.sk.resx" />
+    <None Include="Properties\Resources.sl.resx" />
+    <None Include="Properties\Resources.sr-Latn.resx" />
+    <None Include="Properties\Resources.sr.resx" />
+    <None Include="Properties\Resources.sv.resx" />
+    <None Include="Properties\Resources.th-TH.resx" />
+    <None Include="Properties\Resources.tr.resx" />
+    <None Include="Properties\Resources.uk.resx" />
+    <None Include="Properties\Resources.uz-Cyrl-UZ.resx" />
+    <None Include="Properties\Resources.uz-Latn-UZ.resx" />
+    <None Include="Properties\Resources.vi.resx" />
+    <None Include="Properties\Resources.zh-CN.resx" />
+    <None Include="Properties\Resources.zh-Hans.resx" />
+    <None Include="Properties\Resources.zh-Hant.resx" />
+  </ItemGroup>  
   <ItemGroup>
     <None Update="FluentDate\InDate.Months.tt">
       <LastGenOutput>InDate.Months.cs</LastGenOutput>
